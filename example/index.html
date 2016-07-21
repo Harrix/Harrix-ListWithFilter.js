@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="ru-ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 01</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/harrixListWithFilter.js"></script>
+    </head>
+    <body>
+      <p><input id="filter" type="text" placeholder="Search..." /></p>
+      <ul id="root_tree">
+        <li>Функции
+        <ul>
+          <li>По работе с матрицами
+          <ul>
+            <li>Add</li>
+            <li>Minus.</li>
+          </ul>
+          </li>
+          <li>По работе с векторами
+          <ul>
+            <li>vectortovector</li>
+            <li>Findff</li>
+          </ul>
+          </li>
+        </ul>
+        </li>
+        <li>Файлы
+        <ul>
+          <li>Заголовочные
+          <ul>
+            <li>main.h</li>
+            <li>libary.h</li>
+            <li>Classic</li>
+          </ul>
+          </li>
+          <li>Еще файлы
+          <ul>
+            <li>Там</li>
+            <li>векторы</li>
+          </ul>
+          </li>
+        </ul>
+        </li>
+      </ul>
+      <script type="text/javascript">
+          $().harrixListWithFilter('#root_tree', '#filter');
+      </script>
+    </body>
+</html>
