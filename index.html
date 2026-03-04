@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ListWithFilter - Demo</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        color: #1a1a1a;
+      }
+      h1 {
+        margin-bottom: 1rem;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+      }
+      input[type="text"]:focus {
+        outline: none;
+        border-color: #4a90d9;
+        box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
+      }
+      ul {
+        line-height: 1.6;
+      }
+    </style>
+    <link rel="stylesheet" href="dist/harrix-list-with-filter.css" />
+  </head>
+  <body>
+    <h1>ListWithFilter</h1>
+    <p><input id="filter" type="text" placeholder="Search..." /></p>
+    <ul id="root_tree">
+      <li>
+        Functions
+        <ul>
+          <li>
+            Matrix operations
+            <ul>
+              <li>Add</li>
+              <li>Minus</li>
+            </ul>
+          </li>
+          <li>
+            Vector operations
+            <ul>
+              <li>vectorToVector</li>
+              <li>findFF</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Files
+        <ul>
+          <li>
+            Headers
+            <ul>
+              <li>main.h</li>
+              <li>library.h</li>
+              <li>Classic</li>
+            </ul>
+          </li>
+          <li>
+            Other files
+            <ul>
+              <li>There</li>
+              <li>vectors</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <script src="dist/list-with-filter.umd.js"></script>
+    <script>
+      new ListWithFilter('#root_tree', '#filter');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "harrix-list-with-filter",
+  "version": "2.0.0",
+  "description": "Filterable hierarchical list component for the browser",
+  "type": "module",
+  "main": "./dist/list-with-filter.umd.js",
+  "module": "./dist/list-with-filter.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/list-with-filter.es.js",
+      "require": "./dist/list-with-filter.umd.js"
+    },
+    "./dist/style.css": "./dist/harrix-list-with-filter.css"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "preview": "webpack serve --mode production"
+  },
+  "keywords": [
+    "list",
+    "filter",
+    "tree",
+    "hierarchical",
+    "search"
+  ],
+  "author": "Sergienko Anton",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Harrix/Harrix-ListWithFilter.js"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
